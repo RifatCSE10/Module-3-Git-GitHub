@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgba(231, 223, 223, 0.534);
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+        height: fit-content;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .card {
+        position: relative;
+        box-sizing: border-box;
+        height: 500px;
+        width: 300px;
+        text-align: center;
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+          0 15px 12px rgba(0, 0, 0, 0.22);
+        border-radius: 10px;
+        transition: 0.3s;
+      }
+
+      img {
+        display: block;
+        height: 200px;
+        width: 270px;
+        position: relative;
+        left: 15px;
+        top: 20px;
+        border-radius: 10px;
+      }
+
+      p {
+        text-transform: capitalize;
+        /* font-family: 'Courier New', Courier, monospace; */
+        margin-top: 35px;
+        font-size: 18px;
+        padding: 10px;
+        font-family: "Sarabun", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        color: black;
+      }
+
+      h3 {
+        font-size: 25px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      button {
+        display: block;
+        height: 40px;
+        width: 100px;
+        color: #fff;
+        background-color: rgba(0, 162, 255, 0.699);
+        position: absolute;
+        right: 0;
+        bottom: 17px;
+        left: 50%;
+        margin-left: -50px;
+        border: none;
+        border-radius: 10px;
+        font-size: 17px;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+
+      .card:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>cardview</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h3>Mountain</h3>
+        <img src="./Images/1.jpg" alt="Monutain img" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+          reiciendis harum illum provident sint natus id delectus excepturi,
+          commodi voluptas consequatur odit ipsum non doloremque.
+        </p>
+        <button>Seemore</button>
+      </div>
+
+      <div class="card">
+        <h3>Ocean</h3>
+        <img src="./Images/2.jpg" alt="Monutain img" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum,
+          assumenda totam! Quia perferendis, rem veritatis vitae, ex dolores
+          illum eos minus totam, doloremque eius asperiores?
+        </p>
+        <button>Seemore</button>
+      </div>
+
+      <div class="card">
+        <h3>Nature</h3>
+        <img src="./Images/3.jpg" alt="Monutain img" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+          possimus rerum, nobis architecto explicabo, impedit, eius ut ipsum quo
+          illum corporis deserunt cupiditate odio expedita?
+        </p>
+        <button>Seemore</button>
+      </div>
+    </div>
+  </body>
+</html>
